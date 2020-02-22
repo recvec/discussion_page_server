@@ -18,10 +18,11 @@ class CommentAdapter extends TypeAdapter<Comment> {
     };
     return Comment(
       id: fields[0] as String,
-      text: fields[1] as String,
       authorName: fields[2] as String,
-      state: fields[3] as int,
+      text: fields[1] as String,
       creationTime: fields[4] as String,
+      state: fields[3] as int,
+      isParent: fields[6] as bool,
       nestedComments: (fields[5] as HiveList)?.castHiveList(),
     );
   }
@@ -29,7 +30,7 @@ class CommentAdapter extends TypeAdapter<Comment> {
   @override
   void write(BinaryWriter writer, Comment obj) {
     writer
-      ..writeByte(6)
+      ..writeByte(7)
       ..writeByte(0)
       ..write(obj.id)
       ..writeByte(1)
@@ -41,6 +42,8 @@ class CommentAdapter extends TypeAdapter<Comment> {
       ..writeByte(4)
       ..write(obj.creationTime)
       ..writeByte(5)
-      ..write(obj.nestedComments);
+      ..write(obj.nestedComments)
+      ..writeByte(6)
+      ..write(obj.isParent);
   }
 }

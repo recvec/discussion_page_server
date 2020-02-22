@@ -17,14 +17,15 @@ class Comment extends HiveObject {
   String creationTime;
   @HiveField(5)
   HiveList<Comment> nestedComments;
-
+  @HiveField(6)
+  bool isParent;
   Comment(
       {@required this.id,
         @required this.authorName,
       @required this.text,
         @required this.creationTime,
       this.state = 0,
-
+        this.isParent=true,
       this.nestedComments});
 
   factory Comment.fromJson(Map<String, dynamic> json) => Comment(
@@ -32,6 +33,7 @@ class Comment extends HiveObject {
         authorName: json['authorName'] as String,
         text: json['text'] as String,
         creationTime: json['creationTime'] as String,
+    isParent: json['isParent'] as bool,
         state: json['state'] as int,
         nestedComments: (json['nestedComments'] as List)
             ?.map((e) =>
@@ -39,12 +41,13 @@ class Comment extends HiveObject {
             ?.toList(),
       );
 
-  Map<String, dynamic> toJson(Comment instance) => <String, dynamic>{
-        'id': instance.id,
-        'authorName': instance.authorName,
-        'text': instance.text,
-        'creationTime': instance.creationTime,
-        'state': instance.state,
-        'nestedComments': instance.nestedComments,
+  Map<String, dynamic> toJson( ) => <String, dynamic>{
+        'id': id,
+        'authorName': authorName,
+        'text': text,
+        'creationTime': creationTime,
+    'isParent': isParent,
+        'state': state,
+        'nestedComments': nestedComments,
       };
 }
