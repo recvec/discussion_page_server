@@ -16,27 +16,31 @@ class CommentAdapter extends TypeAdapter<Comment> {
     var fields = <int, dynamic>{
       for (var i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
-    return Comment()
-      ..text = fields[0] as String
-      ..authorName = fields[1] as String
-      ..state = fields[2] as int
-      ..creationTime = fields[3] as String
-      ..nestedComments = (fields[4] as HiveList)?.castHiveList();
+    return Comment(
+      id: fields[0] as String,
+      text: fields[1] as String,
+      authorName: fields[2] as String,
+      state: fields[3] as int,
+      creationTime: fields[4] as String,
+      nestedComments: (fields[5] as HiveList)?.castHiveList(),
+    );
   }
 
   @override
   void write(BinaryWriter writer, Comment obj) {
     writer
-      ..writeByte(5)
+      ..writeByte(6)
       ..writeByte(0)
-      ..write(obj.text)
+      ..write(obj.id)
       ..writeByte(1)
-      ..write(obj.authorName)
+      ..write(obj.text)
       ..writeByte(2)
-      ..write(obj.state)
+      ..write(obj.authorName)
       ..writeByte(3)
-      ..write(obj.creationTime)
+      ..write(obj.state)
       ..writeByte(4)
+      ..write(obj.creationTime)
+      ..writeByte(5)
       ..write(obj.nestedComments);
   }
 }
