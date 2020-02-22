@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b033201-031a-42f6-9177-500557238937" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bin/db/db_service.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/db_service.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/model/comment.dart" beforeDir="false" afterPath="$PROJECT_DIR$/bin/model/comment.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/model/comment.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/bin/model/comment.g.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/server.dart" beforeDir="false" afterPath="$PROJECT_DIR$/bin/server.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,11 +17,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_29" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bin/server.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="480">
+              <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -33,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/db/db_service.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="62" column="47" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
+            <state relative-caret-position="416">
+              <caret line="123" column="12" selection-start-line="123" selection-start-column="12" selection-end-line="123" selection-end-column="12" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -46,36 +42,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../flutter_sdk/flutter/bin/cache/dart-sdk/lib/core/iterable.dart">
+        <entry file="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/hive-1.4.0+1/lib/src/object/hive_collection.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="398" column="10" selection-start-line="398" selection-start-column="10" selection-end-line="398" selection-end-column="10" />
+            <state relative-caret-position="30">
+              <caret line="2" column="65" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="65" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/hive-1.4.0+1/lib/hive.dart">
+        <entry file="file://$PROJECT_DIR$/../../flutter_sdk/flutter/bin/cache/dart-sdk/lib/core/list.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="40" column="15" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
+            <state relative-caret-position="-3868">
+              <caret line="55" column="15" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/hive-1.4.0+1/lib/src/hive.dart">
+        <entry file="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/hive-1.4.0+1/lib/src/object/hive_collection_mixin.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="236">
+              <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bin/model/comment.g.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-180" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/model/comment.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
+            <state relative-caret-position="630">
               <caret line="42" selection-start-line="42" selection-end-line="42" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
@@ -121,10 +124,10 @@
         <option value="$PROJECT_DIR$/bin/model/comment_model.dart" />
         <option value="$PROJECT_DIR$/bin/model/user_data.dart" />
         <option value="$PROJECT_DIR$/bin/db_service.dart" />
-        <option value="$PROJECT_DIR$/bin/server.dart" />
         <option value="$PROJECT_DIR$/bin/model/comment.dart" />
         <option value="$PROJECT_DIR$/bin/model/comment.g.dart" />
         <option value="$PROJECT_DIR$/bin/db/db_service.dart" />
+        <option value="$PROJECT_DIR$/bin/server.dart" />
       </list>
     </option>
   </component>
@@ -229,7 +232,21 @@
       <option name="project" value="LOCAL" />
       <updated>1582365344058</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add nested comments and crud">
+      <created>1582399745191</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582399745191</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix bug with deletion recursive">
+      <created>1582401775156</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1582401775156</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -238,15 +255,15 @@
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
       <window_info id="Capture Tool" order="1" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.34278074" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.34278074" />
       <window_info id="Structure" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="5" />
       <window_info id="Resources Explorer" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Dart Analysis" order="0" weight="0.32896176" />
+      <window_info anchor="bottom" id="Dart Analysis" order="0" weight="0.32857144" />
       <window_info anchor="bottom" id="TODO" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32857144" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32857144" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.32967034" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.33076924" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
@@ -302,7 +319,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add base serialisation" />
-    <option name="LAST_COMMIT_MESSAGE" value="add base serialisation" />
+    <MESSAGE value="add nested comments and crud" />
+    <MESSAGE value="fix bug with deletion recursive" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bug with deletion recursive" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -314,7 +333,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/bin/server.dart</url>
-          <line>90</line>
+          <line>92</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
@@ -471,46 +490,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comments/comments.hive">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/model/user_data.dart">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../flutter_sdk/flutter/bin/cache/dart-sdk/lib/core/list.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="325" column="7" selection-start-line="325" selection-start-column="7" selection-end-line="325" selection-end-column="7" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/hive-1.4.0+1/lib/src/box/box.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
           <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/model/comment.g.dart">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/server.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/model/comment.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -521,19 +507,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/hive-1.4.0+1/lib/src/object/hive_collection_mixin.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../../flutter_sdk/flutter/bin/cache/dart-sdk/lib/core/iterable.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="398" column="10" selection-start-line="398" selection-start-column="10" selection-end-line="398" selection-end-column="10" />
+        <state relative-caret-position="598">
+          <caret line="303" column="4" selection-start-line="303" selection-start-column="4" selection-end-line="303" selection-end-column="4" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/hive-1.4.0+1/lib/src/object/hive_collection.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="65" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../flutter_sdk/flutter/bin/cache/dart-sdk/lib/core/list.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3868">
+          <caret line="55" column="15" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comments/comments.lock">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comments/comments.hive">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/model/comment.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/model/comment.g.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-180" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/db/db_service.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="62" column="47" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
+        <state relative-caret-position="416">
+          <caret line="123" column="12" selection-start-line="123" selection-start-column="12" selection-end-line="123" selection-end-column="12" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/server.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>

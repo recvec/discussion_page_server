@@ -26,19 +26,19 @@ void main(List<String> args) {
       // Upgrade a HttpRequest to a WebSocket connection.
       var socket = await WebSocketTransformer.upgrade(req);
       _sendAllComments(socket);
-      socket.listen((result) => _handleRequest(result, socket));
+      socket.listen((result) => _handleRequest(result));
+      sockets.add(socket);
     }
   }, onError: (e) => print('An error occurred.$e'));
 }
 
-_handleRequest(String request, WebSocket socket) async {
+_handleRequest(String request) async {
   var messages = request.split(splitter);
   var command = messages[0];
   var data = messages[1];
-  try{
-    data+=splitter+messages[2];
-  }
-  catch(e){
+  try {
+    data += splitter + messages[2];
+  } catch (e) {
     print("_handleRequest: no id");
   }
   bool isAlright;
@@ -81,7 +81,9 @@ _handleRequest(String request, WebSocket socket) async {
       }
   }
   if (isAlright) {
-    _sendAllComments(socket);
+    sockets.forEach((element) {
+      _sendAllComments(element);
+    });
   }
 }
 
@@ -91,16 +93,3 @@ _sendAllComments(WebSocket socket) {
   socket.add(json.encode(comments));
 }
 
-//Trash
-//    var bin = CommentAdapter().read(reader)_dbService.getComments()[0];
-
-//
-
-//      var socket = await WebSocketTransformer.upgrade(
-//          req); // Upgrades connection to web socket
-//      sockets.add(socket);
-//     await  _dbService.generateRandomComment();
-//     var res = _dbService.getComments().toString();
-//      sockets.forEach((socket) {
-//        socket.add(res);
-//      });
