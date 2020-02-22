@@ -63,7 +63,8 @@ class DBService {
   Future<bool> deleteComment(String id) async {
     try {
       Comment comment = _commentsBox.get(id);
-      await comment.nestedComments.deleteAllFromHive();
+      await deleteRecursively(comment);
+
       await comment.delete();
 
       return true;
@@ -72,7 +73,17 @@ class DBService {
       return false;
     }
   }
+ Future deleteRecursively(Comment comment) async {
+    for(var nestedComment in comment.nestedComments){
+      if(nestedComment.nestedComments.length!=null){
+       await  deleteRecursively(nestedComment);
+       await nestedComment.nestedComments.deleteAllFromHive();
+       await nestedComment.delete();
+      }
 
+    }
+
+ }
   Future<bool> likeComment(String id) async {
     try {
       Comment comment = _commentsBox.get(id);
